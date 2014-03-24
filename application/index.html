@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <title>SalvationDevelopment International Launcher</title>
+
+
+    <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/webkitapp.css">
+    <link rel="stylesheet" href="css/viewanimations.css">
+    <link rel="stylesheet" href="css/z-index.css">
+    
+</head>
+
+<body>
+    <header id="menubar">
+        <span data-translation="menubar">SalvationDevelopment International Launcher</span>
+        <div id="windowscontrols">
+            <div id="window-close" onclick="window.close();"></div>
+            <div id="window-max-restore"></div>
+            <div id="window-min"></div>
+        </div>
+        <div id="socialbuttons">
+            <div id="github">git</div>
+            <div id="youtube">yt</div>
+            <div id="twitter">t</div>
+            <div id="facebook">f</div>
+
+
+
+        </div>
+    </header>
+    <div id="content" role="main">
+        <nav class="mainnavigation">
+            <div onclick="gotoTab('file');" class="file" id="filemanager-control">File</div>
+            <div onclick="gotoTab('login');"  class="login active" id="login-control">Login</div>
+            <div onclick="gotoTab('news');"  class="news"  id="news-control">News</div>
+            <div onclick="gotoTab('duel');"  class="duel"  id="duels-control">Duel</div>
+            <div onclick="gotoTab('chat');"  class="chat"  id="chat-control">Chat</div>
+            <div onclick="gotoTab('forum');"  class="forum"  id="forums-control">Forum</div>
+            <div onclick="gotoTab('rank');"  class="rank"  id="rank-control">Rank</div>
+            <div onclick="gotoTab('settings');"  class="settings"  id="settings-control">Settings</div>
+        </nav>
+        <div id="view" class="login">
+            <section id="file">file</section>
+            <section id="login" class="active">
+                <div class="loginform">
+                    <h2>Login</h2>
+                    <label>Username:</label>
+                    <input type="text">
+                    <br />
+                    <label>Password:</label>
+                    <input type="text">
+                    <label>Save Password?</label>
+                    <input type="checkbox">
+                    <br />
+                    <div class="button">Login</div>
+                    <div class="button alt">Register</div>
+                </div>
+            </section>
+
+            <section id="news">news</section>
+            <section id="duel">duel</section>
+            <section id="chat">
+                <div id="chatbody">    
+                <h2>Chat</h2>
+                <div style='width:50%; margin:0 auto; min-height: 300px; background:white; border:1px solid black'>...</div>
+            </section>
+            <section id="forum">forum</section>
+            <section id="rank">rank</section>
+            <section id="settings">settings</section>
+            <section id="language">language</section>
+        </div>
+        <footer id="staticbar">
+            <div id='servermessages'>
+                Server Messages will spawn here.
+            </div>
+            <div id="staticcontrols">
+                <div id="LANMode">
+                    LAN Mode
+                </div>
+                <div id="rundeckedit">
+                    Deck Edit
+                </div>
+                <div id="runereplays">
+                    Replays
+                </div>
+                <div id="runlanguage" onclick="gotoTab('language');">
+                    Language
+                </div>
+
+            </div>
+        </footer>
+
+        <script src="js/vendor/jquery-1.11.0.min.js"></script>
+        <script src="js/vendor/watch.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/mvc.js"></script>
+        <script src="js/main.js"></script>
+
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+
+        <script>
+            var googleUA = 'UA-XXXXX-X';
+                (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+                function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+                e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+                e.src='//www.google-analytics.com/analytics.js';
+                r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+                ga('create', googleUA);ga('send','pageview');
+        </script>
+</body>
+
+</html>

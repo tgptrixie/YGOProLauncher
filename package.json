@@ -1,0 +1,11 @@
+{
+    "name": "Salvation Development YGOPro Network Client",
+    "main": "application/index.html",
+    "window": {
+        "toolbar": false,
+        "frame": false,
+        "width": 1024,
+        "min_width": 1024,
+        "height": 535
+    }
+}
